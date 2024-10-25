@@ -1,18 +1,18 @@
 # gmail-ad-filter 🚧
 
-屏蔽 Gmail 邮箱列表中的赞助商广告。未开发完成。
+Block Sponsored Ads in Your Gmail List. Under Development.
 
-## 功能
+## feat
 
-## 安装
+## install
 
-[Github 源](https://raw.githubusercontent.com/qzda/gmail-ad-filter/main/dist/gmail-ad-filter.user.js)
+[Github](https://raw.githubusercontent.com/qzda/gmail-ad-filter/main/dist/gmail-ad-filter.user.js)
 
-需要浏览器装有 [Tampermonkey](https://www.tampermonkey.net/index.php) 插件。
+Requires the browser to have the [Tampermonkey](https://www.tampermonkey.net/index.php) plugin installed.
 
-## 开发
+## dev
 
-本项目使用 [Bun](https://bun.sh/) 构建。
+This project is built using [Bun](https://bun.sh/).
 
 ```bash
 bun i
@@ -23,6 +23,6 @@ bun dev
 # 📦  Bundled     => dist/gmail-ad-filter.user.js
 ```
 
-将 `dist/gmail-ad-filter.user.js` 文件添加到 Tampermonkey 中。
+Add the `dist/gmail-ad-filter.user.js` file to Tampermonkey.
 
 ## Bugs

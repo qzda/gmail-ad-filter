@@ -1,7 +1,7 @@
 {
   "name": "gmail-ad-filter",
   "version": "0.0.1",
-  "description": "屏蔽 Gmail 邮箱列表中的赞助商广告",
+  "description": "Block Sponsored Ads in Your Gmail List",
   "type": "module",
   "license": "MIT",
   "scripts": {
