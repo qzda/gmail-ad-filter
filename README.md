@@ -2,13 +2,15 @@
 
 Block Sponsored Ads in Your Gmail List. Under Development.
 
-## Feat
+## Feature
+
+- Block Sponsored Ads in Your Gmail List
 
 ## Install
 
-[Github](https://raw.githubusercontent.com/qzda/gmail-ad-filter/main/dist/gmail-ad-filter.user.js)
-
 Requires the browser to have the [Tampermonkey](https://www.tampermonkey.net/index.php) plugin installed.
+
+[Github](https://raw.githubusercontent.com/qzda/gmail-ad-filter/main/dist/gmail-ad-filter.user.js)
 
 ## Dev
 
