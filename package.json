@@ -1,0 +1,24 @@
+{
+  "name": "gmail-ad-filter",
+  "version": "0.0.1",
+  "description": "屏蔽 Gmail 邮箱列表中的赞助商广告",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=dev bun run ./build.ts",
+    "build": "bun run ./build.ts"
+  },
+  "keywords": [
+    "gmail",
+    "ad",
+    "filter"
+  ],
+  "dependencies": {
+    "@qzda/prolog": "latest",
+    "fs-extra": "^11.2.0",
+    "node-cmd": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^v11.0.4"
+  }
+}
