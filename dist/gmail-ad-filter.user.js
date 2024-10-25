@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name gmail-ad-filter
-// @description 
+// @description Block Sponsored Ads in Your Gmail List
 // @author qzda
 // @version 0.0.1
 // @match https://mail.google.com/mail/u/*
@@ -79,7 +79,7 @@ var name = "gmail-ad-filter";
 var version = "0.0.1";
 
 // ../utils/dev.ts
-var isDev = true;
+var isDev = false;
 
 // ../utils/log.ts
 function log(...arg) {
@@ -127,25 +127,26 @@ function hiddenBody(hidden) {
   devLog("hiddenBody", hidden);
 }
 
-// initMenuCommand.ts
-function initMenuCommand() {
-  GM_registerMenuCommand("\u83DC\u53551", function(event) {
-    alert("\uD83D\uDEA7\u65BD\u5DE5\u4E2D");
-  }, {
-    autoClose: false
-  });
-  devLog("initMenuCommand");
-}
+// selectors.ts
+var main = ".UI > div";
+var panel = `${main} > div`;
+var selectors = {
+  main,
+  panel,
+  mailItem: `${panel} tbody tr`,
+  ad: ".ast"
+};
+var selectors_default = selectors;
 
 // index.ts
 log();
-initMenuCommand();
 hiddenBody(true);
 window.addEventListener("load", (event) => {
   devLog("window load");
   hiddenBody(false);
-  window.addEventListener("urlchange", (info) => {
-    devLog("urlchange", info);
-    const url = new URL(info.url);
-  });
+  addStyles("ad", `
+      ${selectors_default.mailItem}:has(${selectors_default.ad}) {
+        display: none;
+      }
+    `);
 });
